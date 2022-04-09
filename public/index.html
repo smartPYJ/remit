@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Payment</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" style="height: 30px;" href="images/logo.png" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+	<div class="contact1">
+
+		<br>
+		<span class="contact1-form-title">
+			<img src="images/logo.png" alt="" style=" height: 100px;" ; srcset=""><br>
+
+			REMITTANCE <br>
+			Enter total Amount as specified below
+		</span>
+		<div class="container-contact1">
+
+
+
+
+			<div class="wrap-input1 validate-input" data-validate="Input Number">
+				<label for=""> Congregational Tithe 100% (A)</label>
+				<input id="congregational_tithe" class="input1" type="number" placeholder="Congregational tithe ">
+				<span class="shadow-input1"></span>
+			</div>
+
+			<div class="wrap-input1 validate-input" data-validate="Input Number">
+				<label for=""> Ministers Tithe 100% (B)</label>
+				<input id="ministers_tithe" class="input1" type="number" placeholder="Ministers Tithe">
+				<span class="shadow-input1"></span>
+			</div>
+
+			<div class="wrap-input1 validate-input">
+				<label for=""> Thanksgiving 100% (C)</label>
+				<input id="Thanksgiving" class="input1" type="number" placeholder="Thanksgiving 100%">
+				<span class="shadow-input1"></span>
+			</div>
+
+			<div class="wrap-input1 validate-input">
+				<label for=""> First Fruit 100% (D)</label>
+				<input id="first_fruit" class="input1" type="number" placeholder="First friut 100%">
+				<span class="shadow-input1"></span>
+			</div>
+
+
+			<div class="wrap-input1 validate-input" data-validate="Input Number">
+				<label for=""> Redemmption First born 100%</label>
+				<input id="first_born" class="input1" type="number" placeholder="Redemption First born">
+				<span class="shadow-input1"></span>
+			</div>
+
+			<div class="wrap-input1 validate-input" data-validate="Input Number">
+				<label for=""> Sunday Love Offering 100% (E)</label>
+				<input id="sunday_love" class="input1" type="number" placeholder="Sunday love offering">
+				<span class="shadow-input1"></span>
+			</div>
+
+			<div class="wrap-input1 validate-input" data-validate="Input Number ">
+				<label for=""> C.R.M (Digging deep & Faith Clinic) (F)100%</label>
+				<input id="crm" class="input1" type="number" placeholder="Faith Clinic & Digging Deep">
+				<span class="shadow-input1"></span>
+			</div>
+
+			<div class="wrap-input1 validate-input" data-validate="Subject is required">
+				<label for=""> Sunday School 100% (G)</label>
+				<input id="sunday_school" class="input1" type="number" placeholder="Sunday school">
+				<span class="shadow-input1"></span>
+			</div>
+			<div class="wrap-input1 validate-input" data-validate="Subject is required">
+				<label for=""> Junior Church Offering 100% (H)</label>
+				<input id="junior_church" class="input1" type="number" placeholder="House fellowship">
+				<span class="shadow-input1"></span>
+			</div>
+
+
+			<div class="wrap-input1 validate-input" data-validate="Subject is required">
+				<label for=""> Gospel Fund 100% (I)</label>
+				<input id="gospel" class="input1" type="number" placeholder="Gospel fund">
+				<span class="shadow-input1"></span>
+			</div>
+			<div class="wrap-input1 validate-input" data-validate="Subject is required">
+				<label for=""> House Fellowship 100% (J)</label>
+				<input id="house_fellowship" class="input1" type="number" placeholder="House fellowship">
+				<span class="shadow-input1"></span>
+			</div>
+			<div class="wrap-input1 validate-input" data-validate="Subject is required">
+				<label for=""> (K) 100%</label>
+				<input id="k" class="input1" type="number" placeholder="African mission">
+				<span class="shadow-input1"></span>
+			</div>
+
+
+
+			<div class="wrap-input1 validate-input" data-validate="Subject is required">
+				<label for=""> (L) CRS Province 100%</label>
+				<input id="l" class="input1" type="number" placeholder="CSR Province">
+				<span class="shadow-input1"></span>
+			</div>
+			<div class="wrap-input1 validate-input" data-validate="Subject is required">
+				<label for=""> O 100%</label>
+				<input id="o" class="input1" type="number" placeholder="National weekend and other Levy">
+				<span class="shadow-input1"></span>
+			</div>
+			<button id="submit" class="btn btn-primary">Calculate</button>
+		</div>
+
+	</div>
+	<div class=" navbar ">
+
+		<a href="history.html" class="btn btn-success"> History </a>
+
+	</div>
+
+	<script src="https://js.paystack.co/v1/inline.js"></script>
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<script type="module" src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+
+	<!--===============================================================================================-->
+
+
+</body>
+
+</html>

@@ -41,29 +41,63 @@
 				<p>A. CONGREGATION TITHE </p>
 
 				<ol>
-					<li> <span id="Ai" class="value"></span><span class="percentage"> (100%)</span></li>
-					<li> <span id="Aii" class="value"></span><span class="percentage"> (24%)</span></li>
-					<li><span id="Aiii" class="value"></span> <span class="percentage"> (4.5%)</span></li>
-					<li> <span id="Aiv" class="value"></span><span class="percentage"> (5.0%)</span></li>
-					<li><span id="Av" class="value"></span> <span class="percentage"> (54.5%)</span></li>
-					<li> <span id="Avi" class="value"></span><span class="percentage"> (5.0%)</span></li>
-					<li><span id="Avii" class="value"></span><span class="percentage"> (3.5%)</span></li>
-					<li> <span id="Aviii" class="value"></span><span class="percentage"> (3.5%)</span></li>
+					<li class=""> <span id="Ai" class="value text">Ai</span> <span class="percentage"> </span></li>
+					<li> <span id="Aii" class="value text">Aii</span><span class="percentage"> <input id="pAii"
+								class="percent" type="number"></span></li>
+					<li><span id="Aiii" class="value text">Aiii</span> <span class="percentage"> <input id="pAiii"
+								class="percent" type="number"></span></li>
+					<li> <span id="Aiv" class="value text"> Aiv</span><span class="percentage"> <input id="pAiv"
+								class="percent" type="number"></span></li>
+					<li><span id="Av" class="value text">Av</span> <span class="percentage"> <input id="pAv"
+								class="percent" type="number"></span></li>
+					<li> <span id="Avi" class="value text">Avi</span><span class="percentage"> <input id="pAvi"
+								class="percent" type="number"></span></li>
+					<li><span id="Avii" class="value text">Avii</span><span class="percentage"> <input id="pAvii"
+								class="percent" type="number"></span></li>
+					<li> <span id="Aviii" class="value text">Aviii</span><span class="percentage"> <input id="pAviii"
+								class="percent" type="number"></span></li>
 				</ol>
 
+				<div class="adjust">
+					<div class="adjust_field">
+						<input id="con100" type="text">
+					</div>
+
+					<div>
+						<button class="adjust_button" id="con_tithe">
+							Go
+						</button>
+					</div>
+				</div>
 			</div>
 
 			<div class="card">
 
 				<p> B. MINISTERS TITHE</p>
 				<ol>
-					<li><span id="Bi" class="value"></span><span class="percentage"> (100%)</span></li>
-					<li><span id="Bii" class="value"></span> <span class="percentage"> (62%)</span></li>
-					<li> <span id="Biii" class="value"></span> <span class="percentage"> (11%)</span></li>
-					<li> <span id="Biv" class="value"></span><span class="percentage"> (24%)</span></li>
-					<li> <span id="Bv" class="value"></span><span class="percentage"> (3.0%)</span></li>
+					<li><span id="Bi" class="value text"></span><span class="percentage"> </span></li>
+					<li><span id="Bii" class="value text"> Bii</span> <span class="percentage"> <input id="pBii"
+								class="percent" type="number"> </span></li>
+					<li> <span id="Biii" class="value text"> Biii</span> <span class="percentage"> <input id="pBiii"
+								class="percent" type="number"></span></li>
+					<li> <span id="Biv" class="value text"> Biv</span><span class="percentage"> <input id="pBiv"
+								class="percent" type="number"> </span></li>
+					<li> <span id="Bv" class="value text"> Bv</span><span class="percentage"> <input id="pBv"
+								class="percent" type="number"> </span></li>
 
 				</ol>
+
+				<div class="adjust">
+					<div class="adjust_field">
+						<input id="min100" type="text">
+					</div>
+
+					<div>
+						<button class="adjust_button" id="min_tithe">
+							Go
+						</button>
+					</div>
+				</div>
 
 			</div>
 
@@ -71,14 +105,29 @@
 
 				<p> C.THANKSGIVING</p>
 				<ol>
-					<li><span id="Ci" class="value"></span><span class="percentage"> (100%)</span></li>
-					<li><span id="Cii" class="value"></span><span class="percentage"> (19%)</span></li>
-					<li><span id="Ciii" class="value"></span><span class="percentage"> (5%)</span></li>
-					<li><span id="Civ" class="value"></span><span class="percentage"> (5%)</span></li>
-					<li><span id="Cv" class="value"></span><span class="percentage"> (70%)</span></li>
-					<li><span id="Cvi" class="value"></span><span class="percentage"> (1%)</span></li>
+					<li><span id="Ci" class="value text"> </span><span class="percentage">  </span></li>
+					<li><span id="Cii" class="value text">Cii</span><span class="percentage"> <input id="pCii"
+						class="percent" type="number"></span></li>
+					<li><span id="Ciii" class="value text">Ciii</span><span class="percentage"> <input id="pCiii"
+						class="percent" type="number"></span></li>
+					<li><span id="Civ" class="value text">Civ</span><span class="percentage"> <input id="pCiv"
+						class="percent" type="number"></span></li>
+					<li><span id="Cv" class="value text">Cv</span><span class="percentage"> <input id="pCv"
+						class="percent" type="number"></span></li>
+					<li><span id="Cvi" class="value text">Cvi</span><span class="percentage"> <input id="pCvi"
+						class="percent" type="number"></span></li>
 				</ol>
+				<div class="adjust">
+					<div class="adjust_field">
+						<input id="thanks100" type="text">
+					</div>
 
+					<div>
+						<button class="adjust_button" id="thanks">
+							Go
+						</button>
+					</div>
+				</div>
 			</div>
 
 			<div class="card">
@@ -292,7 +341,7 @@
 
 	</div>
 
-	<div class=" navbar ">
+	<div style="display: flex;">
 
 		<a href="history.html" class="btn btn-success"> History <span>
 				<a href="#" class="btn btn-danger">save</a>
@@ -300,7 +349,7 @@
 
 
 	</div>
-	<script src="https://js.paystack.co/v1/inline.js"></script>
+
 
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -318,8 +367,8 @@
 	</script>
 
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script> -->
+
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -329,7 +378,7 @@
 	</script>
 
 	<!--===============================================================================================-->
-	<script src="js/cal.js"></script>
+	<script src="js/dynamic.js"></script>
 
 </body>
 

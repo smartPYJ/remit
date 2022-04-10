@@ -95,7 +95,6 @@ ol {
 /*---------------------------------------------*/
 
 
-
 textarea {
   outline: none;
   border: none;
@@ -111,14 +110,14 @@ input {
 [type="date"] {
   background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
 }
- /* The navigation bar */
- .navbar {
-
+/* The navigation bar */
+.navbar {
+  
   
   position:fixed;/* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   margin-right:100%;
- 
+  
 }
 
 
@@ -133,6 +132,41 @@ input {
   color: #e63306
 }
 
+.adjust{
+
+display: flex;
+margin-bottom: 20px;
+
+}
+.adjust_field{
+  margin-right: 10px;
+  height: 20px;
+}
+.adjust_button{
+flex: 1;
+width: 50px;
+  background-color: #57b846;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+
+}
+.percent{
+width:70px;
+border-radius: 5px;
+flex: 1 1 auto;
+}
+
+li{
+
+display: flex;
+margin-bottom: 7px;
+}
+
+.text{
+
+  flex: 1 1 auto;
+}
 .card {
   padding-right: 30px;
   padding-left: 39px;
